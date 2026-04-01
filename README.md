@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="doc/assets/header.png" alt="Compayx — runs your business" width="720" />
-</p>
+
 
 <p align="center">
   <a href="#quickstart"><strong>Quickstart</strong></a> &middot;
@@ -300,26 +298,5 @@ We welcome contributions. See the [contributing guide](CONTRIBUTING.md) for deta
 
 <br/>
 
-## Credits
 
-**Compayx** was created by **Tanishq Mohite**
-
-## License
-
-MIT &copy; 2026 Compayx
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/image?repos=compayx/compayx&type=date&legend=top-left)](https://www.star-history.com/?repos=compayx%2Fcompayx&type=date&legend=top-left)
-
-<br/>
-
----
-
-<p align="center">
-  <img src="doc/assets/footer.jpg" alt="" width="720" />
-</p>
-
-<p align="center">
-  <sub>Open source under MIT. Built for people who want to run companies, not babysit agents.</sub>
 </p>
