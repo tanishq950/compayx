@@ -1,18 +1,15 @@
 <p align="center">
-  <img src="doc/assets/header.png" alt="Paperclip — runs your business" width="720" />
+  <img src="doc/assets/header.png" alt="Compayx — runs your business" width="720" />
 </p>
 
 <p align="center">
   <a href="#quickstart"><strong>Quickstart</strong></a> &middot;
-  <a href="https://paperclip.ing/docs"><strong>Docs</strong></a> &middot;
-  <a href="https://github.com/paperclipai/paperclip"><strong>GitHub</strong></a> &middot;
-  <a href="https://discord.gg/m4HZY7xNG3"><strong>Discord</strong></a>
+  <a href="#installation"><strong>Installation</strong></a> &middot;
+  <a href="#credits"><strong>Credits</strong></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/paperclipai/paperclip/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" /></a>
-  <a href="https://github.com/paperclipai/paperclip/stargazers"><img src="https://img.shields.io/github/stars/paperclipai/paperclip?style=flat" alt="Stars" /></a>
-  <a href="https://discord.gg/m4HZY7xNG3"><img src="https://img.shields.io/discord/000000000?label=discord" alt="Discord" /></a>
+  <a href="https://github.com/compayx/compayx/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue" alt="MIT License" /></a>
 </p>
 
 <br/>
@@ -23,13 +20,13 @@
 
 <br/>
 
-## What is Paperclip?
+## What is Compayx?
 
 # Open-source orchestration for zero-human companies
 
-**If OpenClaw is an _employee_, Paperclip is the _company_**
+**If OpenClaw is an _employee_, Compayx is the _company_**
 
-Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Bring your own agents, assign goals, and track your agents' work and costs from one dashboard.
+Compayx is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Bring your own agents, assign goals, and track your agents' work and costs from one dashboard.
 
 It looks like a task manager — but under the hood it has org charts, budgets, governance, goal alignment, and agent coordination.
 
@@ -43,7 +40,7 @@ It looks like a task manager — but under the hood it has org charts, budgets, 
 
 <br/>
 
-> **COMING SOON: Clipmart** — Download and run entire companies with one click. Browse pre-built company templates — full org structures, agent configs, and skills — and import them into your Paperclip instance in seconds.
+> **COMING SOON: Clipmart** — Download and run entire companies with one click. Browse pre-built company templates — full org structures, agent configs, and skills — and import them into your Compayx instance in seconds.
 
 <br/>
 
@@ -66,7 +63,7 @@ It looks like a task manager — but under the hood it has org charts, budgets, 
 
 <br/>
 
-## Paperclip is right for you if
+## Compayx is right for you if
 
 - ✅ You want to build **autonomous AI companies**
 - ✅ You **coordinate many different agents** (OpenClaw, Codex, Claude, Cursor) toward a common goal
@@ -156,41 +153,74 @@ Paperclip handles the hard orchestration details correctly.
 
 <br/>
 
-## What Paperclip is not
+## What Compayx is not
 
 |                              |                                                                                                                      |
 | ---------------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | **Not a chatbot.**           | Agents have jobs, not chat windows.                                                                                  |
 | **Not an agent framework.**  | We don't tell you how to build agents. We tell you how to run a company made of them.                                |
-| **Not a workflow builder.**  | No drag-and-drop pipelines. Paperclip models companies — with org charts, goals, budgets, and governance.            |
-| **Not a prompt manager.**    | Agents bring their own prompts, models, and runtimes. Paperclip manages the organization they work in.               |
-| **Not a single-agent tool.** | This is for teams. If you have one agent, you probably don't need Paperclip. If you have twenty — you definitely do. |
-| **Not a code review tool.**  | Paperclip orchestrates work, not pull requests. Bring your own review process.                                       |
+| **Not a workflow builder.**  | No drag-and-drop pipelines. Compayx models companies — with org charts, goals, budgets, and governance.              |
+| **Not a prompt manager.**    | Agents bring their own prompts, models, and runtimes. Compayx manages the organization they work in.                 |
+| **Not a single-agent tool.** | This is for teams. If you have one agent, you probably don't need Compayx. If you have twenty — you definitely do.   |
+| **Not a code review tool.**  | Compayx orchestrates work, not pull requests. Bring your own review process.                                         |
 
 <br/>
 
 ## Quickstart
 
-Open source. Self-hosted. No Paperclip account required.
+Open source. Self-hosted. No Compayx account required.
 
+## Installation
+
+### Prerequisites
+- **Node.js 20+** ([Download](https://nodejs.org/))
+- **pnpm 9.15+** - Install with: `npm install -g pnpm`
+
+### Linux Installation
+
+1. **Download and extract Compayx:**
 ```bash
-npx paperclipai onboard --yes
+git clone https://github.com/compayx/compayx.git
+cd compayx
 ```
 
-If you already have Paperclip configured, rerunning `onboard` keeps the existing config in place. Use `paperclipai configure` to edit settings.
-
-Or manually:
-
+2. **Install dependencies:**
 ```bash
-git clone https://github.com/paperclipai/paperclip.git
-cd paperclip
 pnpm install
+```
+
+3. **Start Compayx:**
+```bash
 pnpm dev
 ```
 
-This starts the API server at `http://localhost:3100`. An embedded PostgreSQL database is created automatically — no setup required.
+4. **Access Compayx:**
+Open your browser and navigate to `http://localhost:3100`
 
-> **Requirements:** Node.js 20+, pnpm 9.15+
+### Windows Installation
+
+1. **Download and extract Compayx:**
+```bash
+git clone https://github.com/compayx/compayx.git
+cd compayx
+```
+
+2. **Install dependencies:**
+```bash
+pnpm install
+```
+
+3. **Start Compayx:**
+```bash
+pnpm dev
+```
+
+4. **Access Compayx:**
+Open your browser and navigate to `http://localhost:3100`
+
+This starts the API server at `http://localhost:3100`. An embedded PostgreSQL database is created automatically — no additional setup required.
+
+> **Note:** Requirements: Node.js 20+, pnpm 9.15+
 
 <br/>
 
@@ -199,21 +229,21 @@ This starts the API server at `http://localhost:3100`. An embedded PostgreSQL da
 **What does a typical setup look like?**
 Locally, a single Node.js process manages an embedded Postgres and local file storage. For production, point it at your own Postgres and deploy however you like. Configure projects, agents, and goals — the agents take care of the rest.
 
-If you're a solo-entreprenuer you can use Tailscale to access Paperclip on the go. Then later you can deploy to e.g. Vercel when you need it.
+If you're a solo-entreprenuer you can use Tailscale to access Compayx on the go. Then later you can deploy to e.g. Vercel when you need it.
 
 **Can I run multiple companies?**
 Yes. A single deployment can run an unlimited number of companies with complete data isolation.
 
-**How is Paperclip different from agents like OpenClaw or Claude Code?**
-Paperclip _uses_ those agents. It orchestrates them into a company — with org charts, budgets, goals, governance, and accountability.
+**How is Compayx different from agents like OpenClaw or Claude Code?**
+Compayx _uses_ those agents. It orchestrates them into a company — with org charts, budgets, goals, governance, and accountability.
 
-**Why should I use Paperclip instead of just pointing my OpenClaw to Asana or Trello?**
-Agent orchestration has subtleties in how you coordinate who has work checked out, how to maintain sessions, monitoring costs, establishing governance - Paperclip does this for you.
+**Why should I use Compayx instead of just pointing my OpenClaw to Asana or Trello?**
+Agent orchestration has subtleties in how you coordinate who has work checked out, how to maintain sessions, monitoring costs, establishing governance - Compayx does this for you.
 
 (Bring-your-own-ticket-system is on the Roadmap)
 
 **Do agents run continuously?**
-By default, agents run on scheduled heartbeats and event-based triggers (task assignment, @-mentions). You can also hook in continuous agents like OpenClaw. You bring your agent and Paperclip coordinates.
+By default, agents run on scheduled heartbeats and event-based triggers (task assignment, @-mentions). You can also hook in continuous agents like OpenClaw. You bring your agent and Compayx coordinates.
 
 <br/>
 
@@ -255,7 +285,7 @@ See [doc/DEVELOPING.md](doc/DEVELOPING.md) for the full development guide.
 
 ## Community & Plugins
 
-Find Plugins and more at [awesome-paperclip](https://github.com/gsxdsm/awesome-paperclip)
+Find Plugins and more at [awesome-compayx](https://github.com/compayx/awesome-compayx)
 
 ## Contributing
 
@@ -265,19 +295,22 @@ We welcome contributions. See the [contributing guide](CONTRIBUTING.md) for deta
 
 ## Community
 
-- [Discord](https://discord.gg/m4HZY7xNG3) — Join the community
-- [GitHub Issues](https://github.com/paperclipai/paperclip/issues) — bugs and feature requests
-- [GitHub Discussions](https://github.com/paperclipai/paperclip/discussions) — ideas and RFC
+- [GitHub Issues](https://github.com/compayx/compayx/issues) — bugs and feature requests
+- [GitHub Discussions](https://github.com/compayx/compayx/discussions) — ideas and RFC
 
 <br/>
 
+## Credits
+
+**Compayx** was created by **Tanishq Mohite**
+
 ## License
 
-MIT &copy; 2026 Paperclip
+MIT &copy; 2026 Compayx
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/image?repos=paperclipai/paperclip&type=date&legend=top-left)](https://www.star-history.com/?repos=paperclipai%2Fpaperclip&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/image?repos=compayx/compayx&type=date&legend=top-left)](https://www.star-history.com/?repos=compayx%2Fcompayx&type=date&legend=top-left)
 
 <br/>
 
